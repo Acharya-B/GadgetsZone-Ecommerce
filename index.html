@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetsZone</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@500&display=swap');
+</style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+    <link rel="android-chrome-512x512" type="image/png" sizes="512x512" href="/images/favicon_io/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header>
+    <h1 class="top-content">Recycle Your Old Tech, Get Rewarded!</h1>
+    <nav class="navbar">
+        <ul class="sidebar">
+            <li  onclick=hideSideBar()><a href='index.html'><img src='./images/GadgetsZone.svg' height="30px"/></a></li>
+            <li><a href='#'>Login</a></li>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>products</a></li>
+            <li><a href='#'>Donate</a></li>
+            <li><a href='#'>Contact</a></li>
+            <li ><a href='#'>Eco Points  &nbsp; 🌱 </a></li>
+            <li ><a href='#'><img src="./images/shop.svg">&nbsp; Cart  &nbsp;</a></li>
+            
+            
+        </ul>
+        <ul>
+            <li><a href='#home'><img src='./images/GadgetsZone.svg' height="30px"/></a></li>
+            <li class="home hideOnMobile "><a href='#home' >Home</a></li>
+            <li class="hideOnMobile"><a href='#products'>Products</a></li>
+            <li class="hideOnMobile"><a href='#exchange'>Donate</a></li>
+            <li class="hideOnMobile"><a href='#contact'>Contact</a></li>
+            <li class="hideOnMobile"><a href='#'>Login</a></li>
+            <li ><a href='#' class="points-badge hideOnMobile">🌱&nbsp;<span class="pointsCount" id="pointsCount">0</span>&nbsp;pts</a></li>
+            <li ><a href='#' class="hideOnMobile"><button class="cart-button cart-btn"><img src="./images/shop.svg" class="cart-icon"><span id="pointsCount" class="cart-count">0</span></button></a></li>
+            
+            
+            <li onclick=showSidebar() class="hideOnPc" ><a href='#'><img src="images/menu.svg "/></a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<!-- Main -->
+ <main id="home" class="main" >
+    <!-- HOME -->
+    <section class="home section" id="home" >
+      <div class="container home-grid">
+        <div class="home-copy">
+          <h1 id="homeHead">Upgrade Smartly. Exchange & Donate Sustainably.</h1>
+          <p class="lead">Buy new gadgets and donate old devices to earn Eco-Points — redeem points for discounts and support community recycling drives.</p>
+          <div class="cta-row">
+            <a href="#products" class="btn btn-primary">Shop Products</a>
+            <a href="#exchange" class="btn btn-outline">Exchange / Donate</a>
+          </div>
+          <ul class="home-features">
+            <li>Donate devices → earn Eco-Points</li>
+            <li>Redeem points at checkout</li>
+            <li>Donated usable devices go to community partners</li>
+          </ul>
+        </div>
+        <div class="home-art" >
+            <img src="./images/vbg.png">
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+
+    <section class="section" id="products" >
+      <div class="container">
+        <header class="section-head">
+          <h1 id="productsHead">Products</h1>
+          <div class="controls">
+            <input id="search" type="search" placeholder="Search products..."  />
+            <select id="sort">
+              <option value="default">Sort</option>
+              <option value="price-asc">Price: Low → High</option>
+              <option value="price-desc">Price: High → Low</option>
+              <option value="rating-desc">Rating: High → Low</option>
+            </select>
+          </div>
+        </header>
+
+        <div id="productGrid" class="grid" ></div>
+      </div>
+
+    <div class="card-container">
+    <div class="card">
+        <img src="./images/IPHONE16.png" >
+        <h3>Apple Iphone 16 Pro</h3>
+        <p class="brand">GZ Rating • ★★★★★</p>
+        <p class="price">₹94,999</p>
+        <button class="add-btn">ADD TO CART</button>
+    </div>
+    <div class="card">
+        <img src="./images/MACBOOKPRO.png" >
+        <h3>Apple Macbook Pro</h3>
+        <p class="brand">Gadgets Zone • ★★★★★</p>
+        <p class="price">₹1,16,999</p>
+        <button class="add-btn">ADD TO CART</button>
+    </div>
+    <div class="card">
+        <img src="./images/MACMINI.png">
+        <h3> Apple Mac Mini</h3>
+        <p class="brand">Gadgets Zone • ★★★★★</p>
+        <p class="price">₹59,999</p>
+        <button class="add-btn">ADD TO CART</button>
+    </div>
+    <div class="card">
+        <img src="./images/APPLEAIRPODS.png">
+        <h3>Apple AirPods 4</h3>
+        <p class="brand">Gadgets Zone • ★★★★★</p>
+        <p class="price">₹16,999</p>
+        <button class="add-btn">ADD TO CART</button>
+    </div>
+    <div class="card">
+        <img src="./images/samsungGalaxTabFe.png" >
+        <h3>Samsung Galaxy Tab S9 FE</h3>
+        <p class="brand">Gadgets Zone • ★★★★★</p>
+        <p class="price">₹44,999</p>
+        <button class="add-btn">ADD TO CART</button>
+    </div>
+    <div class="card">
+        <img src="./images/CMFPHONE1.png">
+        <h3>CMF By Nothing Phone 1</h3>
+        <p class="brand">Gadgets Zone • ★★★★★</p>
+        <p class="price">₹15,999</p>
+        <button class="add-btn">ADD TO CART</button>
+    </div>
+      <div class="card">
+        <img src="./images/ac-removebg-preview.png" >
+        <h3>Voltas Ajustable inverter Split Ac</h3>
+        <p class="brand">Gadgets Zone • ★★★★★</p>
+        <p class="price">₹32,499</p>
+        <button class="add-btn">ADD TO CART</button>
+    </div>
+    <div class="card">
+        <img src="images/WASHINGMACHINE1.png">
+        <h3>Samsung Automatic Top Load Washing Machine</h3>
+        <p class="brand">Gadgets Zone • ★★★★★</p>
+        <p class="price">₹21,999</p>
+        <button class="add-btn">ADD TO CART</button>
+    </div>
+</div>
+</section>
+
+    <!-- Exchange & Donate -->
+
+    <section class="section section-alt" id="exchange">
+      <div class="container narrow">
+        <header class="section-head">
+          <h2 id="exchangeHead" style="margin-bottom: 30px;">Exchange or Donate Your Old Device</h2>
+          <p class="micro">Choose 'Donate' to give a usable device to our community partners and earn Eco-Points. Exchange gives instant estimate and option to trade-in for discount.</p>
+        </header>
+
+        <form id="exchangeForm" class="form" novalidate>
+          <div class="form-row">
+            <label for="deviceType">Device Type</label>
+            <select id="deviceType" required aria-required="true">
+              <option value="">Choose device</option>
+              <option value="mobile">Mobile Phone</option>
+              <option value="laptop">Laptop</option>
+              <option value="headphones">Headphones</option>
+              <option value="fridge">Fridge</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="modelName">Model Name</label>
+            <input id="modelName" type="text" placeholder="e.g., iPhone 13, Dell XPS 13" required aria-required="true" />
+            <div class="error" id="err-modelName" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="condition">Condition</label>
+            <select id="condition" required aria-required="true">
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="average">Average</option>
+              <option value="poor">Poor</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="devicePhoto">Upload Photo (optional)</label>
+            <input id="devicePhoto" type="file" accept="image/*" />
+          </div>
+
+          <div class="form-row">
+            <label><input id="donateCheckbox" type="checkbox" /> <span style="color: aliceblue;" id="T&C">Donate this device to community partners (earn Eco-Points)</span></label>
+          </div>
+
+          <div class="form-row actions-row">
+            <button id="getEstimate" class="btn btn-primary" type="submit">Get Estimate / Donate</button>
+            <div id="estimateOutput" class="estimate" aria-live="polite"></div>
+          </div>
+
+          <div class="micro">Estimates are indicative. Final value after physical inspection.</div>
+        </form>
+      </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="section" id="about" >
+      <div class="container about-grid">
+        <div>
+          <h2 id="aboutHead">Community Service & Sustainability</h2>
+          <p style="color: rgb(186, 186, 186);margin-left: 20px;margin-top: 20px;">Gadgets Zone partners with local NGOs, colleges, and dedicated volunteers to collect, refurbish, and recycle electronics responsibly, ensuring that every unused device finds a meaningful purpose. Through these initiatives, we reduce electronic waste, promote sustainability, and extend the life cycle of gadgets. Donations made through our platform not only fund community-driven environmental campaigns but also help bridge the digital divide by providing refurbished devices to underprivileged students who lack access to technology. By fostering awareness and encouraging eco-friendly practices, Gadgets Zone is building a greener, more inclusive future where technology empowers communities while protecting the planet.</p>
+          <ul class="ticks">
+            <li >Refurbish & donate usable devices</li>
+            <li >Recycle hazardous components safely</li>
+            <li >Transparent impact reporting</li>
+          </ul>
+        </div>
+
+        <div class="impact-cards">
+          <div class="impact">
+            <strong id="statDevices">0</strong>
+            <span style="color: whitesmoke;">Devices Recycled</span>
+          </div>
+          <div class="impact">
+            <strong id="statKg">0</strong>
+            <span style="color: whitesmoke;">Kg e-waste averted</span>
+          </div>
+          <div class="impact">
+            <strong id="statPeople">0</strong>
+            <span style="color: whitesmoke;">People Impacted</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact" >
+      <div class="container narrow">
+        <h2 id="contactHead">Contact</h2>
+        <p class="micro" style="margin: 20px 0px;">Want to host a drive or ask a question? Send us a message.</p>
+
+        <form id="contactForm" class="form" novalidate>
+          <div class="form-row">
+            <label for="cName">Name</label>
+            <input id="cName" type="text" required />
+            <div class="error" id="err-name" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="cEmail">Email</label>
+            <input id="cEmail" type="email" required />
+            <div class="error" id="err-email" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" rows="4" required></textarea>
+            <div class="error" id="err-message" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="contactStatus" class="micro" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+<footer class="footer">
+<div class="footer-mainContainer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <div class="logo">
+        <img src="./images/GadgetsZone.svg" alt="Ataraxis Logo">
+      </div>
+      <p>Gadgets Zone is an eco-friendly platform where you can buy, sell, exchange, donate, and recycle electronic devices responsibly. We partner with NGOs, colleges, and volunteers to refurbish gadgets, reduce e-waste, and provide devices to underprivileged students, bridging the digital divide while promoting sustainability.
+Revive. Reuse. Reconnect. 🌿</p>
+      
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram insta"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-linkedin linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></i></a>
+
+      </div>
+      <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i> BACK TO TOP
+      </a>
+    </div>
+    <div class="footer-middle">
+      <h4>Site Map</h4>
+      <ul>
+        <li><a href="#">Homepage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Resources & News</a></li>
+        <li><a href="#">Community Partners</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-right">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Services</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+  <div class="footer-end">
+    <p>© 2025 GadgetsZone | All Rights Reserved</p>
+  </div>
+
+<script>
+function showSidebar(){
+    const sidebar=document.querySelector('.sidebar')
+    sidebar.style.display='flex';
+};
+function hideSideBar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none';
+};
+
+
+
+    </script>
+</body>
+</html>
